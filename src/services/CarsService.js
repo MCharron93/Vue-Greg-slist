@@ -1,9 +1,20 @@
 import { AppState } from '../AppState'
-// import router from '../router'
+import router from '../router'
 
 const { api } = require('./AxiosService')
 
 class CarsService {
+  async removeCar(carId) {
+    try {
+      if (window.confirm('Are you sure you want to delete?')) {
+        await api.delete('/cars/' + carId)
+        router.push({ name: 'Cars' })
+      }
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   async getActiveCar(carId) {
     try {
       const res = await api.get('/cars/' + carId)
