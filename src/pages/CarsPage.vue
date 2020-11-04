@@ -1,7 +1,7 @@
 <template>
   <div class="cars-page container-fluid">
     <h2>Car Results:</h2>
-    <div class="row m-1 justify-content-between">
+    <div class="row m-1 justify-content-center">
       <car-component v-for="car in cars" :key="car._id" :car-prop="car" />
     </div>
   </div>

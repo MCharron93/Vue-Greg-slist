@@ -8,6 +8,9 @@
     </router-link> |
     <router-link to="/cars">
       Cars
+    </router-link> |
+    <router-link to="/homes">
+      Homes
     </router-link>
   </div>
   <router-view />
