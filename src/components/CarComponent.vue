@@ -6,7 +6,6 @@
     <h4>
       {{ carProp.make }}, {{ carProp.model }}
     </h4>
-    {{ carProp }}
   </div>
 </template>
 
