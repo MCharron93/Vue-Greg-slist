@@ -4,6 +4,15 @@ import router from '../router'
 const { api } = require('./AxiosService')
 
 class CarsService {
+  async createCar(newCar) {
+    try {
+      await api.post('/cars', newCar)
+      this.getAllCars()
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   async removeCar(carId) {
     try {
       if (window.confirm('Are you sure you want to delete?')) {

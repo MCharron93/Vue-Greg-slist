@@ -9,8 +9,8 @@
     <router-link to="/cars">
       Cars
     </router-link> |
-    <router-link to="/homes">
-      Homes
+    <router-link to="/houses">
+      Houses
     </router-link>
   </div>
   <router-view />
